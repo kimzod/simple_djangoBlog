@@ -12,8 +12,11 @@
 </head>
 <body>
     <div class="header">
-        <h1>zodlab Blog</h1>
+        <a class="home" href="{% url 'blog:index' %}"><h1>zodlab Blog</h1></a>
     </div>
+    <a class="add-post" href="{% url 'blog:add' %}">
+        <button type="button" class="btn btn-info">Add Post</button>
+    </a>
     {% block content %}
     {% endblock %}
 </body>
